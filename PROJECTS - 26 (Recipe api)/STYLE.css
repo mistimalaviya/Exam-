@@ -1,0 +1,203 @@
+*{
+margin:0;  
+padding:0;
+box-sizing:border-box;
+ 
+}   
+.part{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;    
+}
+body{
+    /* background-color: ; */
+    background-image: url(images/pngtree-top-desk-with-blur-restaurant-background-wooden-table-image_15665383.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+padding:20px;
+padding-bottom:30px;
+/* background:black; */
+border: 1px solid white;
+box-shadow: 5px 5px 5px 5px white;
+
+border-radius:7px;
+width:350px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+overflow:hidden;
+}
+
+.container .search-box{
+height:60px; 
+display:flex;
+align-items:center;
+}
+
+.container .search-box input{
+all:unset;  
+height:40px;
+width:100%;
+padding-left:40px;
+padding-right:10px;
+border:2px solid black;
+border-radius:30px;
+font-size:15px;
+background:white;
+}
+
+.container .search-box input::placeholder{
+font-size:14px;        
+}
+
+.container .fa-magnifying-glass{
+color:black;  
+font-size:16px;
+position:absolute;
+left:35px;
+}
+
+.container .displaying-message{
+text-align:center;
+margin-top:30px;
+font-size:14px;
+color:white;  
+margin-left:20px;
+position:relative;
+top:14px;
+color:#696969;
+}
+
+.container .meal-image{
+height:150px; 
+width:150px;
+background:#A87676;
+border-radius:100%;
+margin-top:15px;
+position:absolute;
+left:50%;
+transform:translate(-50%,-50%);
+margin-top:90px;
+}
+
+.container .meal-image img{
+height:100%;   
+width:100%;
+border-radius:100%;
+}
+
+.container .view-recipe-btn{
+all:unset;       
+margin-top:220px;
+background:black;
+border-radius:30px;
+color:#FFF;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:6px;
+font-size:13px;
+padding-left:10px;
+padding-right:10px;
+float:right;
+cursor:pointer;
+}
+
+.container .meal-details{
+width:205px;
+border-radius:30px;
+font-size:14px;
+background:#D83F41;  
+text-align:center;
+padding:7px;
+position:absolute;
+left:50%;
+transform:translate(-50%,-50%);
+margin-top:170px;
+background:white;
+border:2px solid black;
+}
+
+.container .meal-name{
+font-weight:600;
+color:black;
+}
+
+.container .meal-area{
+color:#696969;
+}
+
+.container .ingredients-box{
+position:relative;
+top:205px;
+}
+
+.container .ingredients-box ul{
+display:grid; 
+grid-template-columns:auto auto;
+gap:0.8em 1.1em;
+padding:1.2em 0 0 1.2em;
+font-size:1em;
+}
+
+.container .ingredients-box li{
+font-size:12px;       
+}
+
+.container .recipe-box{
+position:absolute; 
+top:0;
+left:0;
+background:black;
+height:100%;
+width:100%;
+border-radius:7px;
+padding:25px;
+left:-100%;
+transition:all .2s;
+overflow-y:scroll;
+color: white;
+}
+
+.container .recipe-box::-webkit-scrollbar{
+display:none;       
+color: black;
+}
+
+.container .recipe-box .close-btn{
+height:35px; 
+width:35px;
+background:black;
+color:black;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:100%;
+float:right;
+cursor:pointer;
+position:absolute;
+top:23px;
+right:27px;
+}
+
+
+.container .recipe-box .Instructions{
+position:relative;     
+top:5px;
+font-size:.95em;
+white-space:pre-wrap;
+word-wrap:break-word;
+font-family: 'poppins', sans-serif;
+}
+
+::selection{
+background:#A87676;   
+color:black;
+}
